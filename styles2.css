@@ -41,8 +41,15 @@
      font-size: 12px;
      list-style-type: none;
      display: inline;
-         
     }
+.navmenu{
+    transition: 1s;
+}
+
+.navmenu:hover{
+    color: black;
+    font-size: 16px;
+}
 
 .redes{
     grid-area: g3;
@@ -67,7 +74,12 @@ main{
 #i1 {
     height: 280px; 
     filter: sepia(40%);
+    transition: height 2s, filter 3s;
     }
+#i1:hover{
+    filter: sepia(100%);
+    height: 350px;
+}
 
 .about{
     width: 50%;
@@ -124,6 +136,18 @@ main{
     justify-items: center;
 }
 
+.disco1{
+    transform: skew(-5deg, 5deg);
+}
+.disco2{
+    transform: skewY(-5deg);
+}
+.disco3{
+    transform: skewX(3deg);
+}
+.disco4{
+    transform: skew(5deg, -5deg);
+}
 .videos{
     display: grid;
     grid-template-columns: 4fr;

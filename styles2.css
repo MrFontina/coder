@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@200&family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: rgb(182, 178, 178);
+    min-height: 90px;
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(3, 30px);
+    grid-template-areas: 
+    "g1"
+    "g2"
+    "g3";
+}
+
+.logo{
+    grid-area: g1;    
+    justify-self: center;
+       
+}
+.logo h1{
+    padding-top: 8px;
+    font-size: 17px;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.nav{
+    grid-area: g2;
+    text-align: center;
+}
+
+.nav ul li{
+     font-family: 'Roboto', sans-serif;
+     font-size: 12px;
+     list-style-type: none;
+     display: inline;
+         
+    }
+
+.redes{
+    grid-area: g3;
+    text-align: center;
+}
+
+
+
+main{
+    background-color: rgba(0, 0, 0, 0.116);
+    
+}
+
+.container2{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center space-between;
+    align-items: center;
+}
+
+
+#i1 {
+    height: 280px; 
+    filter: sepia(40%);
+    }
+
+.about{
+    width: 50%;
+    }
+
+.about h2{
+    text-align: center;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+    }
+
+.about p{
+    padding-top: 10px;
+    text-align: center;
+    font-family: 'League Spartan', sans-serif;
+    color: black;
+    font-weight: bold;
+    font-size: 12px;
+    }
+
+    .banner svg{
+        width: 100%;
+        background-color: rgba(9, 31, 7, 0.185);
+        border-bottom: 2px solid black;
+        }
+
+    .logofooter{
+        height: 50px;
+        background-color: rgba(245, 220, 220, 0.63);
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-items: center;
+        font-size: 11px;
+    }
+
+    .titulos{
+        padding: 10px 50px 50px 50px;
+        text-align: center;
+        font-family: 'League Spartan', sans-serif;
+        font-weight: bolder;
+        font-size: 25px;
+    }
+
+.discos1{
+    display: grid;
+    grid-template-columns: 4fr 4fr;   
+    justify-items: center;
+}
+.discos2{
+    display: grid;
+    grid-template-columns: 4fr 4fr;
+    justify-items: center;
+}
+
+.videos{
+    display: grid;
+    grid-template-columns: 4fr;
+    justify-items: center;
+    
+}
+
+.clases p{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.imgclases{
+    display: grid;
+    grid-template-columns: 4fr 4fr;
+    grid-template-rows: 4fr 4fr;
+    grid-template-areas: 
+    "im1 im1"
+    "im2 im3";
+    justify-items: center;
+}
+
+#i2{
+    width: 240px;
+    height: 320px;
+    grid-area: im1;
+}
+#i3{
+    height: 200px;
+}
+#i4{
+    width: 230px;
+}
+
+.fechas{
+    background-color: cadetblue;
+    width: 30%;
+    height: 140px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    
+    font-family: 'League Spartan', sans-serif;
+    font-size: 15px;
+    border: 2px solid black;
+}
+    
+
+.formulario{
+    width: 400px;
+    height: 200px;
+    background-color: aquamarine;
+    margin-left: 10px;
+    margin-top: 0px;
+    padding-left: 20px;
+    display: inline-block;
+    
+}
+
+.consultas{
+        height: 200px; 
+        width: 65%;
+        display: inline-block;
+        margin-top: 15px;    
+        text-align: justify;
+        font-family: 'League Spartan', sans-serif;
+        color: black;
+        font-weight: bold;
+        line-height: 15px;
+        }
+
+        .contacto{
+            display: flex;
+            justify-content:space-around;
+            align-items: center;
+            flex-direction:column;
+        }
+        
+    
+
+
+@media only screen and (min-width: 480px){
+    .container{
+        display: grid;
+        grid-template-columns: 25% 25% 40% 10%;
+        grid-template-rows: repeat(4, 25%);
+        grid-template-areas: 
+        "g1 g1 g2 g2"
+        "g1 g1 g2 g2"
+        "g1 g1 g2 g2"
+        "g1 g1 g3 g3";
+        
+    }    
+    .logo{
+        grid-area: g1;        
+        align-self: center;
+        }
+    .logo h1{
+        font-size: 20px;
+        }
+    
+    .nav{
+        grid-area: g2;
+        padding-top: 35px;
+        }    
+       
+    .redes{
+        grid-area: g3;
+        text-align: right;
+    }   
+    .videos{
+        display: grid;
+        grid-template-columns: 4fr 4fr;       
+    }
+        
+}  
+
+@media only screen and (min-width: 1024px){
+    .logo h1{
+        font-size: 25px;
+        }
+        .nav{
+            align-self: end;
+            text-align: left;
+            padding-top: 0px;
+        }
+        .nav ul li{
+            font-size: 15px;
+        }
+        
+    
+    .container2{
+        padding-top: 60px;
+        padding-left: 50px;
+        padding-right: 50px;
+        display: flex;
+        flex-flow: row;
+        justify-content: center space-between;
+        align-items: center;
+        }
+    #i1{
+        padding-left: 20px;
+        padding-top: 70px;
+        height: 400px;
+    }
+    .about{
+        height: 400px;
+        width: 50%;
+        padding-left: 300px;
+    }
+    
+    .about h2{
+        text-align: center;
+        font-size: 40px;
+        padding-top: 30px;
+    }
+    
+    .about p{
+        padding-top: 40px;
+        padding-right: 20px;
+        text-align: justify;
+        font-size: 14px;
+        }
+
+    .titulos{
+        font-size: 60px;
+    }    
+    .discos1{
+            display: grid;
+            grid-template-columns: 5fr 5fr 5fr 5fr;   
+    }
+    .discos2{
+        display: grid;
+        grid-template-columns: 5fr 5fr 5fr;
+        justify-items: center;
+    }
+    .videos{
+        display: grid;
+        grid-template-columns: 4fr 4fr 4fr;
+        
+    }
+
+    .video1{
+        width: 400px;
+    }
+    .video2{
+        width: 400px;
+    }
+    .video3{
+        width: 400px;
+    }
+
+    .imgclases{
+        grid-template-areas: 
+        "im1 im2"
+        "im1 im3";
+}
+
+#i2{
+    width: 500px;
+    height: 600px;
+    grid-area: im1;
+}
+#i3{
+    height: 330px;
+}
+#i4{
+    width: 330px;
+}
+
+.clases p{
+    padding-left: 300px;
+    padding-right: 300px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 19px;
+}
+}
+
